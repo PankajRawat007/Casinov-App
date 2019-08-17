@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:background="@drawable/signup"
+
+            />
+
+
+        <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit1"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="447dp"
+        android:elevation="5dp"
+        app:SpinKit_Color="#d02220" />
+
+
+    <EditText
+        android:id="@+id/usernameedtText"
+        android:layout_width="340dp"
+        android:backgroundTint="#efefef"
+        android:inputType="text"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/robotoreglar"
+        android:hint="Username"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/emailedtText"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#efefef"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/usernameedtText"
+        android:layout_marginRight="30dp"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/robotoreglar"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:outlineProvider="none"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/passedtText"
+        android:layout_width="340dp"
+        android:backgroundTint="#efefef"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/emailedtText"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/robotoreglar"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:outlineProvider="none"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/confirmpassedtText"
+        android:layout_width="340dp"
+        android:backgroundTint="#efefef"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/passedtText"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/robotoreglar"
+        android:hint="Confirm Password"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:text="SUBMIT"
+        android:id="@+id/submit"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/robotoreglar"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_below="@+id/confirmpassedtText"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/submit_btn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Registered!"
+        android:fontFamily="@font/robotoreglar"
+        android:layout_below="@+id/submit"
+        android:layout_marginTop="30dp"
+        android:id="@+id/already"
+        android:textStyle="bold"
+        android:textColor="#afaeae"
+        android:layout_marginLeft="115dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/logintxtview"
+        android:layout_below="@+id/submit"
+        android:layout_marginTop="30dp"
+        android:textColor="#dd2925"
+        android:textStyle="bold"
+        android:fontFamily="@font/robotoreglar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/already"
+        />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

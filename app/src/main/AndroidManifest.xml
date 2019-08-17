@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pankajrawat.homescreen">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".AfterSplash">
+
+        </activity>
+        <activity
+            android:name=".ForgetPassword"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".SplashFrame">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".PopUpActivity"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".IosCasinoApps"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".BestBettingApps"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".BonusActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".CasinoMobileBonuses"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".AndroidCasinoApp"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SignUp"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ContactUs"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".UserReviewInnerr"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".UserReviewInner"
+            android:theme="@style/AppTheme1" />
+    </application>
+
+</manifest>

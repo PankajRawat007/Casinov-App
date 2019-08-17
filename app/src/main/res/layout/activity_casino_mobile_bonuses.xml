@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/reviewImage"
+        android:background="@drawable/reviewimagetest"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewText"
+        android:text="CASINO MOBILE BONUSES"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/robotoreglar"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="447dp"
+        app:SpinKit_Color="#d02220"
+        android:elevation="5dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/androidcasinorecyclerView"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/reviewImage"
+        android:padding="3dp"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

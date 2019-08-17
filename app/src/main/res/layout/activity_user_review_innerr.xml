@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="350dp">
+        <ImageView
+        android:id="@+id/backgrounreviewinner"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:alpha="0.3"
+        android:background="@drawable/design"
+        android:scaleType="centerCrop" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/upper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="3dp"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageview1"
+            android:background="@drawable/designowweb"
+            android:scaleType="centerCrop"/>
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/upper"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="25dp"
+        app:cardElevation="3dp"
+        >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtView"
+            android:text="DESIGNOWEB"
+            android:textSize="30dp"
+            android:fontFamily="@font/robotoreglar"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotoreglar"
+                android:text="Design O Web Technologies is one of the leading companies in the field of Information Technology, Corporate Branding and Digital Marketing in India and overseas. The company was founded in 2014 by a team of industrial professionals having in depth experience of technology and organizational development, on the premise of providing cutting edge technology solutions to global business community. We offer a wide range of services including Website Development, E-Commerce Development, Android App Development, Digital Marketing and corporate branding."
+                android:textColor="#000000"
+                android:textStyle="normal" />
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="310dp"
+            android:layout_marginLeft="30dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/innerstar1"
+                    android:visibility="invisible"
+
+                    android:background="@drawable/filled"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/innerstar2"
+                    android:visibility="invisible"
+                    android:background="@drawable/filled"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/innerstar3"
+                    android:visibility="invisible"
+                    android:background="@drawable/filled"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/innerstar4"
+                    android:visibility="invisible"
+                    android:background="@drawable/filled"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/innerstar5"
+                    android:visibility="invisible"
+                    android:background="@drawable/filled"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inneremptystar1"
+                    android:visibility="invisible"
+                    android:background="@drawable/empty"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inneremptystar2"
+                    android:visibility="invisible"
+                    android:background="@drawable/empty"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inneremptystar3"
+                    android:visibility="invisible"
+                    android:background="@drawable/empty"
+                    />
+
+                <ImageView
+                    android:id="@+id/inneremptystar4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/empty"
+                    android:visibility="invisible" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inneremptystar5"
+                    android:visibility="invisible"
+                    android:background="@drawable/empty"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="38dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="3dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle"
+                android:text="visit us"
+                android:fontFamily="@font/robotoreglar"
+                android:id="@+id/visitus"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="12sp"/>
+        </android.support.v7.widget.CardView>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

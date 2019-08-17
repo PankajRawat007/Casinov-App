@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:innerRadius="0dp"
+    android:shape="rectangle"
+    android:thicknessRatio="1.9"
+    android:useLevel="false">
+    <solid android:color="#f72020"/>
+
+</shape>

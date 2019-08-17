@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:background="@drawable/projectpart5titleimage"/>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="447dp"
+        app:SpinKit_Color="#d02220"
+        android:elevation="5dp"/>
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#efefef"
+        android:id="@+id/loginemail"
+        android:hint="Email"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="30dp"/>
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#efefef"
+        android:id="@+id/loginpass"
+        android:layout_below="@+id/loginemail"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:layout_marginLeft="30dp"
+        android:hint="Password"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:id="@+id/forgettxtview"
+        android:layout_below="@+id/loginpass"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginRight="10dp"/>
+
+
+
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:text="LOGIN"
+        android:id="@+id/login"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/robotoreglar"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/forgettxtview"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/submit_btn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not a Member?"
+        android:fontFamily="@font/robotoreglar"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="30dp"
+        android:id="@+id/notamember"
+        android:textStyle="bold"
+        android:textColor="#afaeae"
+        android:layout_marginLeft="115dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="30dp"
+        android:textColor="#dd2925"
+        android:textStyle="bold"
+        android:fontFamily="@font/robotoreglar"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/signuptxt"
+        android:layout_toEndOf="@+id/notamember"
+        />
+
+</RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
